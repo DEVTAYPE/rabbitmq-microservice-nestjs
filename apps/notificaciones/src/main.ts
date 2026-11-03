@@ -11,9 +11,10 @@ async function bootstrap() {
       options: {
         urls: ['amqp://admin:admin123@localhost:5672'],
         queue: 'notificaciones_wild_queue',
+        // wildcards: true,
+        // exchangeType: 'topic',
         queueOptions: {
           durable: true,
-          wildcards: true
         },
       },
     },

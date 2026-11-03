@@ -13,9 +13,10 @@ import { PedidosService } from './pedidos.service';
           urls: ['amqp://admin:admin123@localhost:5672'],
           queue: 'notificaciones_wild_queue',
           persistent: true,
+          // wildcards: true,
+          // exchangeType: 'topic',
           queueOptions: {
             durable: true,
-            wildcards: true,
             // arguments: {
             //   'x-message-ttl': 6000
             // }
@@ -27,4 +28,4 @@ import { PedidosService } from './pedidos.service';
   controllers: [PedidosController],
   providers: [PedidosService],
 })
-export class PedidosModule {}
+export class PedidosModule { }
