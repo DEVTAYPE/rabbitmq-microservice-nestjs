@@ -19,6 +19,15 @@
         "tsConfigPath": "apps/notificaciones/tsconfig.app.json"
       }
     },
+    "pagos": {
+      "type": "application",
+      "root": "apps/pagos",
+      "entryFile": "main",
+      "sourceRoot": "apps/pagos/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/pagos/tsconfig.app.json"
+      }
+    },
     "tienda": {
       "type": "application",
       "root": "apps/tienda",

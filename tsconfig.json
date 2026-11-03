@@ -30,6 +30,9 @@
     },
     {
       "path": "./apps/notificaciones/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/pagos/tsconfig.app.json"
     }
   ]
 }

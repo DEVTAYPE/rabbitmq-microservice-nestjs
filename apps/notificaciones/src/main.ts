@@ -10,7 +10,8 @@ async function bootstrap() {
       transport: Transport.RMQ,
       options: {
         urls: ['amqp://admin:admin123@localhost:5672'],
-        queue: 'notificaciones_wild_queue',
+        queue: 'notificaciones_queue',
+        // queue: 'notificaciones_wild_queue',
         // wildcards: true,
         // exchangeType: 'topic',
         queueOptions: {
